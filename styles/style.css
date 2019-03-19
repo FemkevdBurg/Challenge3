@@ -1,0 +1,176 @@
+
+@font-face{
+  font-family:'Exo';
+  src: url('Exo-Light.ttf');
+}
+
+@import "compass/css3";
+
+/* -------------------- LAYOUT -------------------- */
+html,
+body {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+ background-image: url("../images/background_360.png");
+ background-size: cover;
+ background-repeat: repeat;
+ width: 100%;
+}
+
+body {
+  /*font-size: 14px;
+  font-family: 'SourceSansPro', Arial, sans-serif;
+  color: white;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0px;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;*/
+}
+
+.logo{
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+h1{
+  color: white;
+  font-family: 'exo', sans-serif;
+}
+
+#API1{
+  background-color: white;
+  font-family: 'exo', sans-serif;
+  height: 400px;
+  text-align: center;
+}
+
+#API2{
+  background-color: white;
+  font-family: 'exo', sans-serif;
+  height: 400px;
+  text-align: center;
+}
+
+h3{
+  background-color: lightblue;
+  text-align: center;
+  height: 40px;
+  margin-top: 0px;
+  padding: 5px;
+}
+
+fieldset{
+  border: none;
+}
+
+#picture{
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+}
+
+#landing{
+  width: 400px;
+  background-color: grey;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-left: 40px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#weather{
+  background-color: lightblue;
+  width: 200px;
+  margin-left: 150px;
+  border-style: double;
+}
+
+
+/* -------------------- LAYOUT -------------------- */
+
+
+/* -------------------- MEDIA SIZE -------------------- */
+
+/*Breakpoint naar tablet*/
+@media only screen and (min-width: 768px){
+
+  body{
+    max-width: 768px;
+    height: auto;
+  }
+
+    body{
+      background-image: url("../images/background_768.png");
+      background-repeat: repeat;
+      width: 100%;
+    }
+
+}
+/*Breakpoint naar laptop*/
+@media only screen and (min-width: 1366px){
+
+  body{
+    width: 1366px;
+    width: 100%;
+  }
+
+  body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 20px;
+    }
+
+  body{
+    background-image: url("../images/background_1366.png");
+    background-repeat: repeat;
+    width: 100%;
+    }
+
+  .logo{
+    margin-left: 0px;
+  }
+
+.flex-containerData{
+  display: flex;
+  margin-top: 20%;
+  margin-left: -20%;
+}
+
+.flex-itemAPI1{
+  width: 500px;
+}
+
+.flex-itemAPI2{
+  column: 2;
+  margin-left: 100px;
+  width: 500px;
+}
+
+}
+/*Breakpoint naar desktop*/
+@media only screen and (min-width: 1920px) and (max-width: 1920px){
+
+  body{
+    width: 1920px;;
+    width: 100%;
+    max-width: 1920px;
+
+    /*display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;*/
+
+    background-image: url("../images/background_1920.png");
+    background-repeat: repeat;
+    }
+
+}
+/* -------------------- MEDIA SIZE -------------------- */

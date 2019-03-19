@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Challenge 3</title>
+    <link type="text/css" href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+    <section class="grid-container header">
+      <div class="flex-item logo">
+        <img  srcest="images/logo_336.png 336w,"
+              sizes="(max-width: 336px) 100w,"
+              src="images/logo_336.png"
+              alt="logo spaceX"/>
+      </div>
+      <div class="flex-item titel">
+        <h1>Terug naar aarde</h1>
+      </div>
+    </section>
+
+<section class="data flex-containerData">
+
+    <div id="API1" class="flex-itemAPI1">
+      <h3>The current weather at the landing place</h3>
+  		<article id="weather"></article>
+        <div id="landing">
+          <p>Landingsadvies:</p>
+          <div id="advies"></div>
+          <img id="picture"></img>
+        </div>
+    </div>
+
+    <div id="API2" class="flex-itemAPI2">
+      <h2 id="name"></h2>
+      <h2 id="language"></h2>
+    </div>
+</section>
+
+  <script src="scripts/country.js"></script>
+  <script src="scripts/weather.js"></script>
+  </body>
+</html>
