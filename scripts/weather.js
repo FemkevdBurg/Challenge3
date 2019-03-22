@@ -3,7 +3,7 @@ function getAPIdata() {
 
 	var url = "http://api.openweathermap.org/data/2.5/weather";
 	var apiKey ="4fd792807839ef3185fdca5e830ab9bb";
-	var city = "The Hague";
+	var city = "Amsterdam";
 
 	// construct request
 	var request = url + "?" + "appid=" + apiKey + "&" + "q=" + city;
@@ -70,6 +70,16 @@ function onAPISucces(response) {
     document.getElementById('advies').innerHTML = "Je kan landen";
     document.getElementById('picture').src = "images/success.png";
   }
+
+	if(type.includes("mist")) {
+		document.getElementById('advies').innerHTML = "Niet landen";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("thunderstorm")) {
+		document.getElementById('advies').innerHTML = "Niet landen";
+		document.getElementById('picture').src = "images/error.png";
+	}
 
 	// render weather in DOM
 	var weatherBox = document.getElementById('weather');

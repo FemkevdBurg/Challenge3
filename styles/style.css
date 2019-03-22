@@ -49,6 +49,11 @@ h1{
   font-family: 'exo', sans-serif;
   height: 400px;
   text-align: center;
+  float: right;
+}
+
+.kop{
+  color: lightblue;
 }
 
 #API2{
@@ -58,7 +63,7 @@ h1{
   text-align: center;
 }
 
-h3{
+h2{
   background-color: lightblue;
   text-align: center;
   height: 40px;

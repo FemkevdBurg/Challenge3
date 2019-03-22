@@ -16,26 +16,30 @@
               alt="logo spaceX"/>
       </div>
       <div class="flex-item titel">
-        <h1>Terug naar aarde</h1>
+        <h1>Back to Earth</h1>
       </div>
     </section>
 
 <section class="data flex-containerData">
 
-    <div id="API1" class="flex-itemAPI1">
-      <h3>The current weather at the landing place</h3>
+  <div id="API1" class="flex-itemAPI1">
+    <h2>Landing place information</h2>
+    <p class="kop">Country:</p><p id="name"></p>
+    <p class="kop">City:</p><p id="capital"></p>
+    <p class="kop">Population of the country:</p><p id="population"></p>
+    <p class="kop">Flag:</p><svg xmlns='https://restcountries.eu/data/nld.svg' id="flag"></svg>
+  </div>
+
+    <div id="API2" class="flex-itemAPI2">
+      <h2>The current weather at the landing place</h2>
   		<article id="weather"></article>
         <div id="landing">
-          <p>Landingsadvies:</p>
+          <p>Landing advice:</p>
           <div id="advies"></div>
           <img id="picture"></img>
         </div>
     </div>
 
-    <div id="API2" class="flex-itemAPI2">
-      <h2 id="name"></h2>
-      <h2 id="language"></h2>
-    </div>
 </section>
 
   <script src="scripts/country.js"></script>
