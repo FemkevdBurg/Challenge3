@@ -96,3 +96,8 @@ function onAPIError(error) {
 // init data stream
 
 	getAPIdata();
+
+
+//Animatie
+//TweenMax.from(".logo", 1, {opacity: 0, x:-600, rotation:300, scale:0.5, delay: 0});
+TweenMax.from("#picture", 1, {opacity: 0, x:-600, rotation:800, scale:0.5, delay: 0});

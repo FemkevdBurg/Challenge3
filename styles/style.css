@@ -42,14 +42,17 @@ body {
 h1{
   color: white;
   font-family: 'exo', sans-serif;
+  text-align: center;
 }
 
 #API1{
   background-color: white;
   font-family: 'exo', sans-serif;
-  height: 400px;
+  height: 450px;
   text-align: center;
-  float: right;
+  width: 90%;
+  margin-left: 5%;
+
 }
 
 .kop{
@@ -59,8 +62,20 @@ h1{
 #API2{
   background-color: white;
   font-family: 'exo', sans-serif;
-  height: 400px;
+  height: 450px;
   text-align: center;
+  margin-top: 50px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 50px;
+}
+
+.flex-containerData{
+  display: inline;
+}
+
+.flex-itemAPI2{
+  margin-left: 0%;
 }
 
 h2{
@@ -68,7 +83,8 @@ h2{
   text-align: center;
   height: 40px;
   margin-top: 0px;
-  padding: 5px;
+  padding: 15px;
+  font-size: 20px;
 }
 
 fieldset{
@@ -82,26 +98,28 @@ fieldset{
 }
 
 #landing{
-  width: 400px;
+  width: 70%;
   background-color: grey;
   font-size: 20px;
   color: white;
   text-align: center;
-  margin-left: 40px;
+  margin-left: 12%;
   margin-top: 20px;
   padding: 10px;
 }
 
 #weather{
   background-color: lightblue;
-  width: 200px;
-  margin-left: 150px;
+  width: 50%;
+  margin-left: 25%;
   border-style: double;
 }
 
+#flag{
+  width: 10%;
+}
 
 /* -------------------- LAYOUT -------------------- */
-
 
 /* -------------------- MEDIA SIZE -------------------- */
 
@@ -109,22 +127,30 @@ fieldset{
 @media only screen and (min-width: 768px){
 
   body{
-    max-width: 768px;
-    height: auto;
+    min-width: 768px;
+    width: 100%;
   }
 
-    body{
-      background-image: url("../images/background_768.png");
-      background-repeat: repeat;
-      width: 100%;
-    }
+  body{
+    background-image: url("../images/background_768.png");
+    background-repeat: repeat;
+    width: 100%;
+  }
+
+  .grid-containerHeader{
+    display: flex;
+  }
+
+  #API1{
+
+  }
 
 }
 /*Breakpoint naar laptop*/
 @media only screen and (min-width: 1366px){
 
   body{
-    width: 1366px;
+    min-width: 1366px;
     width: 100%;
   }
 
@@ -144,38 +170,56 @@ fieldset{
     margin-left: 0px;
   }
 
-.flex-containerData{
-  display: flex;
-  margin-top: 20%;
-  margin-left: -20%;
-}
+  .flex-containerData{
+    display: flex;
+    margin-top: 20%;
+    margin-left: -90%;
+  }
 
-.flex-itemAPI1{
-  width: 500px;
-}
+  .flex-itemAPI2{
+    column: 2;
+  }
 
-.flex-itemAPI2{
-  column: 2;
-  margin-left: 100px;
-  width: 500px;
-}
+  #API1{
+    float: right;
+    width: 45%;
+    margin-top: 50px;
+    margin-left: -2%;
+  }
+
+  #API2{
+    width: 45%;
+  }
 
 }
 /*Breakpoint naar desktop*/
 @media only screen and (min-width: 1920px) and (max-width: 1920px){
 
   body{
-    width: 1920px;;
     width: 100%;
     max-width: 1920px;
 
-    /*display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
 
     background-image: url("../images/background_1920.png");
     background-repeat: repeat;
     }
+
+    .flex-containerData{
+      margin-left: -90%;
+    }
+
+    #API1{
+      float: right;
+      width: 45%;
+    }
+
+    #API2{
+      width: 45%;
+    }
+
 
 }
 /* -------------------- MEDIA SIZE -------------------- */
