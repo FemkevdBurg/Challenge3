@@ -1,7 +1,7 @@
 
 function getAPIdata() {
 
-	var url = "http://api.openweathermap.org/data/2.5/weather";
+	var url = "https://api.openweathermap.org/data/2.5/weather";
 	var apiKey ="4fd792807839ef3185fdca5e830ab9bb";
 	var city = "Amsterdam";
 
