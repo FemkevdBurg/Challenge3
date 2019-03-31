@@ -41,43 +41,90 @@ function onAPISucces(response) {
     alert("Test");
   }
 
+// Geef aan of het veilig of niet veilig is om te landen met betrekking tot het weer
+
   if(type.includes("clouds")) {
-    document.getElementById('advies').innerHTML = "Niet landen";
-    document.getElementById('picture').src = "images/error.png";
+    document.getElementById('advies').innerHTML = "It's safe to land";
+    document.getElementById('picture').src = "images/success.png";
   }
 
   if(type.includes("rain")) {
-    document.getElementById('advies').innerHTML = "Je kan landen";
+    document.getElementById('advies').innerHTML = "It's safe to land";
     document.getElementById('picture').src = "images/success.png";
   }
 
   if(type.includes("snow")) {
-    document.getElementById('advies').innerHTML = "Niet landen";
+    document.getElementById('advies').innerHTML = "It's unsafe to land";
     document.getElementById('picture').src = "images/error.png";
   }
 
   if(type.includes("clear")) {
-    document.getElementById('advies').innerHTML = "Je kan landen";
+    document.getElementById('advies').innerHTML = "It's safe to land";
     document.getElementById('picture').src = "images/success.png";
   }
 
   if(type.includes("atmosphere")) {
-    document.getElementById('advies').innerHTML = "Je kan landen";
+    document.getElementById('advies').innerHTML = "It's safe to land";
     document.getElementById('picture').src = "images/success.png";
   }
 
   if(type.includes("drizzle")) {
-    document.getElementById('advies').innerHTML = "Je kan landen";
+    document.getElementById('advies').innerHTML = "It's safe to land";
     document.getElementById('picture').src = "images/success.png";
   }
 
 	if(type.includes("mist")) {
-		document.getElementById('advies').innerHTML = "Niet landen";
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
 		document.getElementById('picture').src = "images/error.png";
 	}
 
 	if(type.includes("thunderstorm")) {
-		document.getElementById('advies').innerHTML = "Niet landen";
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("smoke")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("haze")) {
+		document.getElementById('advies').innerHTML = "It's safe to land";
+		document.getElementById('picture').src = "images/success.png";
+	}
+
+	if(type.includes("sand")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("fog")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("dust")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("mist")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("ash")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("squalls")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
+		document.getElementById('picture').src = "images/error.png";
+	}
+
+	if(type.includes("tornado")) {
+		document.getElementById('advies').innerHTML = "It's unsafe to land";
 		document.getElementById('picture').src = "images/error.png";
 	}
 
@@ -99,5 +146,4 @@ function onAPIError(error) {
 
 
 //Animatie
-//TweenMax.from(".logo", 1, {opacity: 0, x:-600, rotation:300, scale:0.5, delay: 0});
 TweenMax.from("#picture", 1, {opacity: 0, x:-600, rotation:800, scale:0.5, delay: 0});

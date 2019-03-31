@@ -20,20 +20,6 @@ body {
  width: 100%;
 }
 
-body {
-  /*font-size: 14px;
-  font-family: 'SourceSansPro', Arial, sans-serif;
-  color: white;
-
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 0px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;*/
-}
-
 .logo{
   margin-top: 0px;
   margin-left: 20px;
@@ -52,7 +38,6 @@ h1{
   text-align: center;
   width: 90%;
   margin-left: 5%;
-
 }
 
 .kop{
@@ -141,10 +126,6 @@ fieldset{
     display: flex;
   }
 
-  #API1{
-
-  }
-
 }
 /*Breakpoint naar laptop*/
 @media only screen and (min-width: 1366px){
@@ -219,7 +200,6 @@ fieldset{
     #API2{
       width: 45%;
     }
-
 
 }
 /* -------------------- MEDIA SIZE -------------------- */

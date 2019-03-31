@@ -5,6 +5,7 @@ function getAPIdata() {
 		return response.json();
 	})
 	.then(function(response) {
+	//Informatie over de landingsplaats (Nederland, Amsterdam)
 		console.log(response);
 		document.getElementById('name').innerHTML = response[157].name;
 		document.getElementById('capital').innerHTML = response[157].capital;
